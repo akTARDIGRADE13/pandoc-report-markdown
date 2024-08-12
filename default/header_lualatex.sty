@@ -1,0 +1,106 @@
+\usepackage{luatexja}
+
+\usepackage{tcolorbox}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{subfig}
+\usepackage{ulem}
+\usepackage{url}
+\usepackage{caption}
+\usepackage[backend=biber]{biblatex}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    basicstyle=\ttfamily,
+    keywordstyle=\color[rgb]{0,0,0.6}\bfseries,
+    stringstyle=\color[rgb]{0,0.6,0},
+    commentstyle=\color[rgb]{0.4,0.4,0.4}\itshape,
+    numberstyle=\ttfamily,
+    numbers=none,
+    stepnumber=1,
+    numbersep=15pt,
+    numberstyle=\color[rgb]{0.6,0.6,0.6},
+    tabsize=4,
+    breaklines=true,
+    captionpos=t,
+    frame=single,
+    rulecolor=\color[rgb]{0.8,0.8,0.8}, 
+    backgroundcolor=\color[rgb]{0.95,0.95,0.95},
+    showspaces=false,
+    showtabs=false,
+    showstringspaces=false
+}
+
+\usepackage{framed}
+\usepackage[luatex,unicode]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=blue
+}
+\usepackage{pdfpages}
+\usepackage{multicol}
+
+\usepackage{siunitx}
+\usepackage{fancybox}
+\usepackage[version=3]{mhchem}
+\AtBeginDocument{\usepackage{physics}}
+\usepackage{amsthm}
+\usepackage{pgf}
+\RequirePackage{luatex85}
+\usepackage[all]{xy}
+\usepackage{amscd}
+\usepackage{tikz-cd}
+\usepackage{tikz-feynman}
+\usepackage{tikz-feynhand}
+
+\usepackage{mathcommand}
+\newmathcommand{\bm}[1]{\symbfit{{#1}}}
+\newmathcommand{\slashed}[1]{{\displaystyle{\not}{#1}}}
+\renewmathcommand{\d}[1]{\dd{{#1}}}
+\renewmathcommand{\~}{\tilde}
+\renewmathcommand{\^}{\hat}
+\renewmathcommand{\=}{\bar}
+\renewmathcommand{\.}{\dot}
+\renewmathcommand{\"}{\ddot}
+
+\usepackage{float}
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+
+\newenvironment{Shaded}{\begin{shaded}}{\end{shaded}}
+\definecolor{shadecolor}{RGB}{200,200,200}
+\newenvironment{Highlighting}{}{}
+
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\RegionMarkerTok}[1]{{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+\newcommand{\NormalTok}[1]{{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+
+\setlength{\textwidth}{\fullwidth}
+\setlength{\textheight}{40\baselineskip}
+\addtolength{\textheight}{\topskip}
+\setlength{\voffset}{-0.2in}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
