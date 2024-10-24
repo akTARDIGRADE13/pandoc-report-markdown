@@ -29,6 +29,9 @@ variables:
     linkcolor: blue
     top-level-division: section
     indent: true
+    mainfont: "IPAexMincho"
+    monofont: "Source Han Code JP"
+    sansfont: "IPAexGothic"
 
 shift-heading-level-by: -1
 

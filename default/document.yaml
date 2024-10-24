@@ -1,7 +1,7 @@
 from: markdown+raw_tex
 to: latex
 
-pdf-engine: pdflatex
+pdf-engine: xelatex
 listings: true
 number-sections: false
 
@@ -24,6 +24,9 @@ variables:
     linkcolor: blue
     top-level-division: section
     indent: true
+    mainfont: "TeX Gyre Termes"
+    monofont: "DejaVu Sans Mono"
+    sansfont: "TeX Gyre Heros"
 
 shift-heading-level-by: -1
 
