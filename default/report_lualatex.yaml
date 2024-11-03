@@ -30,7 +30,7 @@ variables:
     top-level-division: section
     indent: true
     mainfont: "IPAexMincho"
-    monofont: "Source Han Code JP"
+    monofont: "Noto Sans Mono"
     sansfont: "IPAexGothic"
 
 shift-heading-level-by: -1
